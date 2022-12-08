@@ -1,0 +1,35 @@
+{% block content %}
+<style>
+    nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+</style>
+  <nav>
+        <a href="{{url_for('home')}}">e-Store</a>
+        <a href="{{url_for('products')}}">Products</a>
+    </nav>
+    <hr>
+
+    <h1>{% block title %} Add a New Post {% endblock %}</h1>
+    <form method="post">
+        <label for="title">Product name</label>
+        <br>
+        <input type="text" name="title"
+               placeholder="Name of the product"
+               value="{{ request.form['title'] }}"></input>
+        <br>
+
+        <label for="content">Product details</label>
+        <br>
+        <textarea name="content"
+                  placeholder="Add details about the product"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['content'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

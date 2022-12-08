@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}: Simple Flask</title>
+    <style>
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{url_for('home')}}">e-Store</a>
+        <a href="{{url_for('products')}}">Products</a>
+    </nav>
+    <hr>
+    <p style = "font-size: 30px">Welcome to our store, here you can browse all our products</p>
+    <img src = "https://s13emagst.akamaized.net/products/40685/40684414/images/res_974dc0e4b6a1180b612c24afef8eb494.jpg?width=450&height=450&hash=F600B744D72D180CBB4A7B23AD814449">
+    <img src = "https://s13emagst.akamaized.net/products/45413/45412531/images/res_9a727eee296b3a765744ad861a8cddb6.jpg?width=450&height=450&hash=878A834B915A05C9981F8944C298D3A6">
+    <img src = "https://s13emagst.akamaized.net/products/39779/39778175/images/res_de7286394c5d13b3c8c4eb824af251bc.jpg?width=450&height=450&hash=E2E425B71F2C9157EBA7E5FD4D6B8458">
+    </div>
+</body>
+</html>
